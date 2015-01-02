@@ -13,7 +13,10 @@ MAINTAINER Dominique Righetto <dominique.righetto@gmail.com>
 # Install build dependencies for Skipfish
 RUN apt-get update && apt-get install -y build-essential libidn11-dev libssl-dev libpcre3-dev make python2.7 wget
 # Define global environments variables that will be used as "constants"
-ENV ARACHNI_VERSION="1.0.6-0.5.6" WAPITI_VERSION="2.3.0" SKIPFISH_VERSION="2.10b" LANG="C.UTF-8"
+ENV ARACHNI_VERSION 1.0.6-0.5.6 
+ENV WAPITI_VERSION 2.3.0
+ENV SKIPFISH_VERSION 2.10b
+ENV LANG C.UTF-8
 # Download and install ARACHNI scanner
 RUN wget -nv -O /tmp/arachni.tar.gz http://downloads.arachni-scanner.com/arachni-$ARACHNI_VERSION-linux-x86_64.tar.gz \
 	&& tar -C /usr/local -xf /tmp/arachni.tar.gz && mv /usr/local/arachni-$ARACHNI_VERSION /usr/local/arachni && chmod -R +x /usr/local/arachni
