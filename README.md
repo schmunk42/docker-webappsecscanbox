@@ -2,14 +2,16 @@
 
 [Docker](http://docs.docker.com) build file creating a [image](http://docs.docker.com/introduction/understanding-docker/#how-does-a-docker-image-work) of a box containing web application scanners. 
 
+# Motivation
+
 Final goal is to use the docker image in order to integrate security web application scanners into a **C**ontinuous **I**ntegration **P**latform.
 
-> Free and open sources scanners has been used in order to enable possibility to add a first level of security validation (surface) on project that don't have the budget to buy commercial suite. 
+Free and open sources scanners with Docker has been used in order to enable possibility to add a first level of security validation (surface) on project that don't have the budget to buy commercial suite. 
 
 
 # Image location
 
-A automated build has been defined on Docker forge in order to build and push image in Docker Hub repository.
+A automated build has been defined on Docker forge in order to build and push image in Docker Hub repository:
 
 https://registry.hub.docker.com/u/righettod/webappsecscanbox/
 
@@ -31,7 +33,7 @@ docker run --rm=true -i -t righettod/webappsecscanbox /bin/bash
 
 ## Execute a scanner on web application
 
-In command below we mount the path "/tmp/work" of the container to the path "/tmp/scanner/work" of the host (CIP host) in order to write reports on host storage.
+In command below we mount the path **/tmp/work** of the container to the path **/tmp/scanner/work/xxx** (where **xxx** is the scanner name) of the host (CIP host) in order to write reports on host storage.
 
 
 ### Arachni
