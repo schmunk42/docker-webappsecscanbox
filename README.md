@@ -8,6 +8,12 @@ Final goal is to use the docker image in order to integrate security web applica
 
 Free and open sources scanners with Docker has been used in order to enable possibility to add a first level of security validation (surface) on project that don't have the budget to buy commercial suite. 
 
+**Sources:**
+
+* Personal XP on web app dev projects,
+* [Source n°1](http://www.sectoolmarket.com/price-and-feature-comparison-of-web-application-scanners-unified-list.html),
+* [Source n°2](http://sectools.org/tag/web-scanners/).
+
 
 # Image location
 
